@@ -20,12 +20,12 @@ describe('Triangle', () => {
    var scalTriangle = new Triangle(4,5,7)
    expect(scalTriangle.checkType()).toEqual("scalene triangle");
  });
- test('should correctly determine whether three lengths make an isosceles triangle', () => {
-   var isocTriangle = new Triangle(5,5,7)
-   expect(isocTriangle.checkType()).toEqual("isosceles triangle");
- });
  test('should correctly determine whether three lengths make an equilateral triangle', () => {
    var equiTriangle = new Triangle(4,4,4)
    expect(equiTriangle.checkType()).toEqual("equilateral triangle");
+ });
+ test('should correctly determine whether three lengths make an isosceles triangle', () => {
+   var isocTriangle = new Triangle(5,5,7)
+   expect(isocTriangle.checkType()).toEqual("isosceles triangle");
  });
 });
